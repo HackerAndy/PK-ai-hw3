@@ -19,7 +19,8 @@ def main():
     # balance with interest earned for the given months.
     formatted_interest_earned = "${:,.2f}".format(interest_earned)
     print(f"Interest Earned: {formatted_interest_earned}")
-
+    formatted_balance = "${:,.2f}".format(updated_savings_balance)
+    print(f"New Balance: {formatted_balance}")
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     cd_balance = input("\nWhat is your CD account balance: \n")
     cd_interest = input("What is currently your interest rate: \n")
@@ -31,7 +32,8 @@ def main():
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     formatted_interest_earned = "${:,.2f}".format(interest_earned)
     print(f"Interest Earned: {formatted_interest_earned}")
-
+    formatted_balance = "${:,.2f}".format(updated_cd_balance)
+    print(f"New Balance: {formatted_balance}")
 if __name__ == "__main__":
     # Call the main function.
     main()
